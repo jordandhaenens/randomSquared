@@ -20,10 +20,8 @@ namespace random
                 squared.Add(num * num);
             }
 
-            squared = squared.Where()
-            foreach (int num in squared) {
-                
-            }
+            squared.RemoveAll(n => n % 2 != 0);
+            
             foreach (int num in squared) {
                 Console.WriteLine(num);
             }
